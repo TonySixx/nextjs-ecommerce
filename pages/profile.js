@@ -6,7 +6,7 @@ import Link from 'next/link'
 import valid from '../utils/valid'
 import { patchData } from '../utils/fetchData'
 
-import {imageUpload} from '../utils/imageUpload'
+//import {imageUpload} from '../utils/imageUpload'
 
 const Profile = () => {
     const initialSate = {

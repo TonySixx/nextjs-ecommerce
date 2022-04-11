@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import {useState, useContext, useEffect} from 'react'
 import {DataContext} from '../../store/GlobalState'
-import {imageUpload} from '../../utils/imageUpload'
+// import {imageUpload} from '../../utils/imageUpload'
 import {postData, getData, putData} from '../../utils/fetchData'
 import {useRouter} from 'next/router'
 
@@ -96,7 +96,7 @@ const ProductsManager = () => {
         const imgNewURL = images.filter(img => !img.url)
         const imgOldURL = images.filter(img => img.url)
 
-        if(imgNewURL.length > 0) media = await imageUpload(imgNewURL)
+        // if(imgNewURL.length > 0) media = await imageUpload(imgNewURL)
 
         let res;
         if(onEdit){
